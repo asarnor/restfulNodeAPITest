@@ -1,13 +1,13 @@
 // DEPENDENCIES
-var express = require('express');
-var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
+let express = require('express');
+let mongoose = require('mongoose');
+let bodyParser = require('body-parser');
 
 // mongodb connection setup
 mongoose.connect('mongodb://localhost/rest_test');
 
 // express setup
-var app = express();
+let app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());

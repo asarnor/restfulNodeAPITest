@@ -1,10 +1,10 @@
 // DEPENDENCIES
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 // Models go here
-var Products = require('../models/products');
-var Users = require('../models/users');
+let Products = require('../models/products');
+let Users = require('../models/users');
 
 // Apply methods and register models
 Products.methods(['put', 'post', 'get', 'delete'])

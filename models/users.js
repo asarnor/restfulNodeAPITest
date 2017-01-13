@@ -1,10 +1,10 @@
 // Boilerplate for restful model https://github.com/baugarten/node-restful
 // DEPENDENCIES
-var restful = require('node-restful');
-var mongoose = restful.mongoose;
+let restful = require('node-restful');
+let mongoose = restful.mongoose;
 
 // Schema
-var userSchema = new mongoose.Schema({
+let userSchema = new mongoose.Schema({
   name:String,
   id:String
 });
