@@ -1,7 +1,7 @@
 // Boilerplate for restful model https://github.com/baugarten/node-restful
 // DEPENDENCIES
-let restful = require('node-restful');
-let mongoose = restful.mongoose;
+const restful = require('node-restful');
+const mongoose = restful.mongoose;
 
 // Schema
 let productSchema = new mongoose.Schema({

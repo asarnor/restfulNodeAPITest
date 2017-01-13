@@ -1,10 +1,10 @@
 // DEPENDENCIES
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 // Models go here
-let Products = require('../models/products');
-let Users = require('../models/users');
+const Products = require('../models/products');
+const Users = require('../models/users');
 
 // Apply methods and register models
 Products.methods(['put', 'post', 'get', 'delete'])
@@ -15,7 +15,7 @@ Users.methods(['put', 'post', 'get', 'delete'])
 
 /*
 // test route
-router.get('/products', function(req, res) {
+router.get('/products', (req, res) => {
   res.send('is working')
 });
 */

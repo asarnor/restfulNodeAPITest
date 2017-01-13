@@ -1,7 +1,7 @@
 // DEPENDENCIES
-let express = require('express');
-let mongoose = require('mongoose');
-let bodyParser = require('body-parser');
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
 // mongodb connection setup
 mongoose.connect('mongodb://localhost/rest_test');
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use('/api', require('./routes/api'));
 
 // make sure its working
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.send('please use api/products or api/users');
 });
 
